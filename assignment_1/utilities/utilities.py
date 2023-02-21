@@ -1,5 +1,8 @@
+import pandas as pd
 import numpy as np
 from sklearn.metrics import confusion_matrix
+import matplotlib.pyplot as plt
+
 
 def generate_nd_normal_uncorrleated(number, mus, sigmas):
     data=np.array([np.random.normal(m,s,number) for m,s in zip(mus,sigmas)])
